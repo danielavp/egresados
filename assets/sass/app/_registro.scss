@@ -1,0 +1,72 @@
+/***************************************************
+ ********** REGISTRO INFORMACION *******************  
+ ***************************************************/
+ .contenedor-registro-informacion{
+    padding-bottom: 4rem;
+    .registro-informacion__formulario{
+        width: 70%;
+        max-width: 60rem;
+        min-width: 30rem;
+        margin: auto;
+        background-color: $fondo-color-registrar;
+        box-shadow: $box-shandow-2;
+        border-radius: 0.9rem;  
+        padding: 1rem;
+        padding-bottom: 1.5rem;
+ 
+        .formulario__encabezado{
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+            margin-bottom: 1rem;
+ 
+            .titulo{
+                font-size: 1.5rem;
+                text-transform: uppercase; 
+                color:$letra-color-encabezados-3;
+            }
+        } 
+
+        // CAPACITACION
+        .registrar-capacitacion-loading{
+            display: none;
+              &.visible{
+                  display: block;
+              }
+        }
+
+        .registrar-capacitacion-btn{
+            &.ocultar{
+                display: none;
+            }
+        }
+
+        // REUNION
+        .registrar-reunion-loading{
+            display: none;
+              &.visible{
+                  display: block;
+              }
+        }
+
+        .registrar-reunion-btn{
+            &.ocultar{
+                display: none;
+            }
+        }
+
+        // ENCUESTA
+        .registrar-encuesta-loading{
+            display: none;
+              &.visible{
+                  display: block;
+              }
+        }
+
+        .registrar-encuesta-btn{
+            &.ocultar{
+                display: none;
+            }
+        }
+    }
+}

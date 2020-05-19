@@ -1,0 +1,10 @@
+/***************************************************
+ **************** PANTALLA *************************
+ ***************************************************/
+ .pantalla-flexible{
+	@include pantalla-flexible(center,center,row,wrap);
+}
+
+.pantalla-flexible-between{
+	@include pantalla-flexible(space-between);
+}

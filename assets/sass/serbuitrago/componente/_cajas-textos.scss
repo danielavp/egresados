@@ -1,0 +1,38 @@
+/***************************************************
+ ******************* CAJA TEXTO ********************
+ ***************************************************/
+
+//***********************************************
+// CAJA TEXTO
+//***********************************************
+
+.caja-texto {
+	@include caja-texto();
+	height: 8%;	
+}
+
+.caja-texto-area{
+	@include caja-texto();
+	height: 10rem;
+	text-align: initial;
+    align-self: initial;
+}
+
+//***********************************************
+// CAJA SELECTOR
+//***********************************************
+.caja-texto-selector{
+    @include caja-texto();
+    display: block;
+    width: auto; 
+}
+
+//***********************************************
+// OTRO
+//***********************************************
+.span{
+	font-weight: bold;
+	font-size: $letra-valor-2;
+	text-transform: capitalize;
+	color:$letra-color-encabezados-1;
+}

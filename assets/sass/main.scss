@@ -1,0 +1,28 @@
+@import "app/body.scss";
+
+//***********************************************
+// SERBUITRAGO 
+//***********************************************
+@import "serbuitrago/serbuitrago";
+
+
+//***********************************************
+// APP
+//***********************************************
+@import "app/login";
+@import "app/section";
+@import "app/pie_pagina";
+@import "app/menu";
+@import "app/generico";
+@import "app/registro";
+
+//***********************************************
+// ADMI
+//***********************************************
+@import "app/admi/tarjeta";
+
+@import "serbuitrago/componente/efectos";
+
+// cd C:/xampp/htdocs/php/egresados/assets
+// sass sass/main.scss:css/main.css
+// sass --watch sass/main.scss:css/main.css  

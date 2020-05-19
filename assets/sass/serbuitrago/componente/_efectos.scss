@@ -1,0 +1,47 @@
+/***************************************************
+ ******************* EFECTOS ***********************
+ ***************************************************/
+
+//***********************************************
+// FORMULARIOS
+//***********************************************
+.efecto-formulario__contenedor{
+    position: relative;
+    min-width: 18.75rem;
+    max-width: 18.75rem;
+    margin: 1rem auto;
+    margin-bottom: 1.6rem;
+
+           
+   label{
+        position: absolute;
+        transform: translateY(10px);
+        left: 11px;
+        transition: all 0.25s ease;
+        font-size: 0.9rem;
+        backface-visibility: hidden;
+        pointer-events: none;
+
+        .req{
+            color: $color-letra-2;
+            font-weight: bold;
+        }
+
+        &.activo {
+            transform: translateY(40px);
+            left: 2px;
+            font-size: 14px;
+            color: $color-letra-1;
+
+            .req{
+                opacity: 0;
+            }
+        }
+
+        &.realce{
+            color: $color-letra-1;
+        }
+    }
+}       
+ 
+    

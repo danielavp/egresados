@@ -1,0 +1,101 @@
+/***************************************************
+ ********************** MENU ***********************
+ ***************************************************/
+ .menu{
+    background: $fondo-color-menu;
+    @include posicionamiento(fixed,900, 0,0,0,none, auto, 100%);
+
+    .menu__navegacion{
+        padding: 0.5rem;
+
+        .enlace{
+            margin: 1rem;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: $letra-valor-2; 
+        }
+
+        .menu__items-logo{
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .menu__items-enlaces{
+            overflow: hidden;
+            @include posicionamiento(fixed,1000, 0,0,none,none, 100vh, $ancho-menu-enlaces);
+            background: $fondo-color-menu-enlaces;
+            padding: 1rem;
+            flex-direction: column;
+            justify-content: flex-start;
+            transition: transform 0.5s linear;
+            transform: translateX(-100%);
+            
+
+            &.visible{
+                transform: translateY(0);
+            }
+
+            .enlace{
+                font-size: 1.2rem;
+                &.cerrar-menu{
+                     align-self: flex-end;
+                     margin-bottom: 5rem;
+                }
+            }
+        }
+
+        .menu__items-iconos{
+            position: relative;
+            
+            .enlace{
+                &.ocultar{
+                    display: none;
+                }
+            } 
+
+            .menu__items__contenedor{
+                position: absolute;
+                background: $fondo-color-menu-iconos-contenedor;
+                box-shadow: $box-shandow-2;
+                top:80%;
+                left: -98%;
+                min-width: 15rem;
+                width: auto;
+                height: auto;
+                overflow: hidden;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.7s linear;
+
+                &.visible{
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                div{
+                    border: $border-tabla;
+                    width: 100%;
+                    padding: 0.5rem 0rem;
+                    text-align: center;
+
+                    &:nth-child(1n + 1){
+                        border-top: none;
+                    }
+
+                    &:nth-child(1){
+                        border-top: $border-tabla;
+                    }
+
+
+                    .enlace{
+                        color: $color-letra-3;
+                    }
+                }
+
+                
+            }
+        }
+    }
+ }

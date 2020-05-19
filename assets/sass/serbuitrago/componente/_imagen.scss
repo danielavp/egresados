@@ -1,0 +1,25 @@
+/***************************************************
+ ******************** IMAGENES *********************
+ ***************************************************/
+
+.logo{
+	display: block;
+	margin: auto;
+	width: $ancho-logo;
+	height: $alto-logo;
+}
+
+.icono{
+	width: $ancho-icono;
+	height: $alto-icono;
+	&:hover{
+        transform: scale(0.95);
+    }
+}
+
+.icono-awasome{
+	font-size: 1.4rem;
+	&:hover{
+        transform: scale(0.95);
+    }
+}

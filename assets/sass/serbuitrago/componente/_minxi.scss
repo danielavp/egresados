@@ -1,0 +1,90 @@
+
+//***********************************************
+//  FUNCIONES CONTENEDORES
+//***********************************************
+@mixin contenedores($fondo:transparent) {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0rem;
+	padding: 0rem;
+	background-color: $fondo;
+}
+
+//***********************************************
+//  FUNCIONES ENCABEZADOS
+//***********************************************
+@mixin encabezados($color:$letra-color-encabezados-1) {
+	color: $color;
+	text-align: center;
+	height: auto;
+	text-transform: capitalize;
+	width: 100%;
+	font-family: $letra-tipo;
+}
+
+//***********************************************
+//  FUNCIONES CAJA TEXTO
+//***********************************************
+@mixin caja-texto($fondo:$color-fondo-3, $color:$color-letra-3) {
+	font-size: $letra-valor-2;
+	display: block;
+	width: 100%;
+	padding: 0.6rem 0.625rem;
+	background: $fondo;
+	border: none;
+	border: 1px solid $fondo;
+	color: $color;
+	transition: all 0.5s ease;
+	border-radius: 0.3125rem ;
+	outline: none;
+	font-weight: 100;
+}
+
+//***********************************************
+//  FUNCIONES BOTONES
+//***********************************************
+@mixin botones ($fondo:transparent, $color-letra:$color-letra-boton) {
+	width: auto;
+	height: auto;
+	padding: 0.7rem 1rem;
+	color: $color-letra;
+	outline: none;
+	box-shadow: none;
+	background: $fondo;
+	transition: all 0.5s linear;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: $letra-valor-2;
+	font-weight: 100;
+	text-transform: capitalize;
+	text-align: center;
+	font-family: $letra-tipo;
+}
+
+//***********************************************
+//  FUNCIONES PANTALA FLEXIBLE
+//***********************************************
+@mixin pantalla-flexible($fila:center, $columna:center, $direccion:row, $wrap: wrap) {	
+	display: flex;
+	justify-content: $fila;
+	align-items: $columna;
+	flex-direction: $direccion;
+	flex-wrap: $wrap;
+	height: auto;   
+}
+
+
+//***********************************************
+//  FUNCIONES POSICIONAMIENTO
+//***********************************************
+@mixin posicionamiento($tipo:relative, $z-indez:-1, $top:none, $left:none, $rigth:none, $botton:none, $height:auto, $width:auto) {
+	position: $tipo;
+	z-index: $z-indez;
+	top: $top;
+	left: $left;
+	right: $rigth;
+	bottom: $botton;
+	height: $height;
+	width: $width;
+}

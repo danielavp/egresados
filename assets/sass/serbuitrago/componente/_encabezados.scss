@@ -1,0 +1,14 @@
+/***************************************************
+ **************** ENCABEZADOS **********************
+ ***************************************************/
+
+ .subtitulo {
+	@include encabezados();
+	font-style: italic;
+	font-size: 1.875rem;
+}
+
+.titulo {
+	@include encabezados();
+	font-size: 2rem;
+}

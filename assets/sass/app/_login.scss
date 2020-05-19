@@ -1,0 +1,101 @@
+/*************************************************
+******************** LOGIN ***********************
+**************************************************/
+.contenedor-login{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+
+    // IMAGE FONDO
+    background-image: url(../img/UFPS/estudiantes.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    
+    .login__contenedor-formulario{ 
+        background: $fondo-color-login;
+        width: 60%;
+        max-width: $ancho-login;
+        min-width: $ancho-login;
+        padding: 1.2rem;
+        border-radius: 0.9375rem;
+        box-shadow: $box-shandow-login;
+
+
+        .logo{
+            object-fit: cover;
+
+            &:hover,
+            &:focus{
+                box-shadow: $box-shandow-login;
+            }
+        }
+        
+
+        .titulo{
+            margin: 0.9rem auto;
+            margin-bottom: 0rem;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
+
+        .subtitulo{
+           margin-bottom: 1rem;
+           font-size: 1.4rem;
+           font-style: normal;
+           text-transform: uppercase;
+        }
+
+        .login__formulario{
+            .contenedor-selector{
+                margin-top: 0rem;
+                .selector{
+                    margin: 0rem 1rem;
+                    .caja-texto-selector{
+                       font-weight: normal;
+                       padding: 0.5rem;
+                     } 
+
+                } 
+
+                .span{
+                    margin: 0rem 1rem;
+                    display: block;
+                    text-align: right;
+                   .enlace{
+                       font-weight: bold;
+                       text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        .ingresar{
+            margin: 1rem auto;
+            padding: 0.5rem 2rem;
+            font-weight: bold;
+             &:hover,
+             &:focus{
+                 background-color: transparent;
+             }
+
+             &.ocultar{
+                display: none;
+            }
+        }
+
+        .google-loader{
+            display: none;
+            margin: 1rem; 
+
+            &.visible{
+                display: block;
+            }
+        }
+
+    }   
+}

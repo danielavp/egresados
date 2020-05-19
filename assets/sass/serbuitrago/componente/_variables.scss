@@ -1,0 +1,124 @@
+//***********************************************
+// VARIABLES COLOR
+//***********************************************
+
+// COLORES RGBA
+$colores-rgba:(
+    1: rgba(255, 64, 64, .7), // ROJO LIGERO
+    2: rgba(19, 35, 47, .8),  // NEGRO AZULADO
+    3: rgba(22, 127, 146, 0.4), // AZUL OSCURO
+    4: rgba(0,0,0,0.2), // NEGRO CLARO
+);
+
+// COLORES 
+$colores:(
+    1: #E2031A, // ROJO OSCURO
+    2: #FFFFFF, // BLANCO
+    3: #FFEBCD, //PIEL  
+    4: #fdf5e6, // CREMA
+    5: #c9dff0, // AZUL CLARO
+    6: #EAF3F3, // AZUL RE CLARO
+    7: #167F92, // AZUL OSCURO
+    8: #E3E3E3, // GRIS
+);
+
+// BOX SHANDOW 
+$box-shandow:(
+    1: 0px 0px 30px -5px map-get($colores-rgba , 2),  
+    2: 0px 3px 10px -2px map-get($colores-rgba, 4),
+);
+
+$degradados:(
+    1: linear-gradient(30deg, map-get($colores,1),20%, map-get($colores-rgba,1)),  // PIEL - ROJO LIGERO
+);
+
+
+
+//***********************************************
+// APP
+//***********************************************
+$color-fondo-body: map-get($colores, 8);
+$color-fondo-1: map-get($colores, 1);
+$color-fondo-2: map-get($colores-rgba, 1);
+$color-fondo-3: map-get($colores, 2);
+
+$color-fondo-degradado-1: map-get($degradados, 1);
+
+$color-letra-1: map-get($colores, 2);
+$color-letra-2: $color-fondo-1;
+$color-letra-3: map-get($colores-rgba, 2);
+
+$letra-tipo: 'Roboto', monospace, 'Times New Roman', sans-serif;
+$letra-valor: 16px;
+$letra-valor-2: 0.9rem;
+
+$box-shandow-1: map-get($box-shandow , 1);
+$box-shandow-2: map-get($box-shandow , 2);
+
+//***********************************************
+// ENCABEZADOS
+//***********************************************
+$letra-color-encabezados-1: $color-letra-1;
+$letra-color-encabezados-2: $color-letra-3;
+$letra-color-encabezados-3: $color-letra-2;
+
+//***********************************************
+// CAJA TEXTO
+//***********************************************
+$border-caja-texto: 1px solid $color-letra-3;
+
+//***********************************************
+// BOTONES
+//***********************************************
+$fondo-color-boton-1: $color-fondo-1;
+
+$color-letra-boton:$color-letra-1;
+
+//***********************************************
+// LOGIN
+//*********************************************** 
+$fondo-color-login: $color-fondo-2;
+
+$ancho-login:31rem;
+$letra-valor-formulario:0.9rem;
+
+$box-shandow-login: $box-shandow-1;
+
+//***********************************************
+// IMAGEN
+//***********************************************
+$ancho-logo:6rem;
+$alto-logo: $ancho-logo;
+
+$ancho-icono:30px;
+$alto-icono: $ancho-icono;
+
+//***********************************************
+// MENU
+//***********************************************
+$fondo-color-menu:$color-fondo-1;
+$fondo-color-menu-enlaces: $color-fondo-degradado-1;
+$fondo-color-menu-iconos-contenedor: map-get($colores, 2);
+
+$ancho-menu-enlaces:25rem;
+
+//***********************************************
+// TABLA
+//***********************************************
+
+$fondo-color-tabla-thead: map-get($colores, 5);
+$fondo-color-tabla-tbody-par: map-get($colores, 2);
+$fondo-color-tabla-tbody-impar: map-get($colores, 6);
+$fondo-color-tabla-tbody-hover: map-get($colores-rgba, 3);
+
+$color-letra-tabla-thead: $color-letra-3;
+
+$border-tabla-tbody-hover: 1px solid map-get($colores, 4);
+$border-tabla: 1px solid #D9E4E6;
+
+
+//***********************************************
+// REGISTRAR
+//***********************************************
+$fondo-color-registrar: map-get($colores, 2);
+

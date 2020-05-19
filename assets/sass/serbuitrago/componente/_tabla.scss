@@ -1,0 +1,156 @@
+/**************************************************
+********************** TABLAS *********************
+***************************************************/
+.tabla-generica{
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    thead{     
+        font-size: 1rem;
+        background: $fondo-color-tabla-thead;
+        tr{
+            th{
+                color:$color-letra-tabla-thead;
+                padding: 1rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    tbody{
+        tr{     
+            &:nth-child(odd){ 
+                background-color: $fondo-color-tabla-tbody-par;
+            }
+
+            &:nth-child(even){
+                background-color: $fondo-color-tabla-tbody-impar;
+            }
+
+            &:hover{
+                td{
+                    border:$border-tabla-tbody-hover;
+                    background:$fondo-color-tabla-tbody-hover;
+                    color: $color-letra-1;
+                }
+            } 
+
+            td{
+                font-size: 0.9rem;
+                border: $border-tabla;
+                transition: all 0.6s linear;
+                &:nth-of-type(1){ 
+                    font-weight: bold;
+                    text-transform: uppercase; 
+                }
+
+                .enlace{
+                    font-weight: bold;
+                    margin: 1rem;
+
+                    img{
+                        width: 1.87rem;
+                        height: 1.87rem;
+                        font-size: 1.87rem;
+                    }
+                }     
+            }
+        }
+    }
+}
+
+
+.dataTables_wrapper{
+    
+    .dataTables_length{
+        text-align: right;
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    .dataTables_filter{ 
+        margin: 2rem;
+        label{
+            width: 100%;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            padding: 1rem;
+            content: '';
+            input{
+                @include caja-texto();
+                background-color:$fondo-color-tabla-thead;
+                width: 50%;
+                margin: auto;
+                padding: 1rem;
+            }
+        }
+    }
+
+    .dataTables_info{
+        margin: 2rem;
+        text-align: right;
+        padding: 0.7rem;
+    }
+
+    .dataTables_paginate{
+        @include pantalla-flexible(space-between);
+        padding: 1rem;
+        margin: 2rem;
+
+        a{
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            box-shadow: none;
+            text-transform: uppercase;
+            text-decoration: none;
+            
+            padding: 1rem;
+
+            &:hover{
+                transform: scale(0.95);
+            }
+
+            &.next,
+            &.previous {
+                background:$fondo-color-boton-1;
+                border-radius: 0.9rem;
+                color: $color-letra-1;
+            }
+        }
+
+        span{
+            margin-right: 0.2rem;
+            border-radius: 15px;
+            padding: 1rem;
+        }
+    }
+    
+    .dataTables_scroll{
+        .dataTables_scrollBody{
+            overflow-y: hidden !important;
+            height: auto !important;
+        }
+    }
+}
+
+.dataTables_empty{
+    width: 100%;
+    padding: 1rem;
+}
+ 
+.tabla-tarjeta{
+    thead{     
+       display: none;
+    }
+
+    tbody{
+        width: 90% !important;
+        margin: auto;
+    }
+}
+
+
+

@@ -1,0 +1,25 @@
+
+/***************************************************
+ ****************** FOOTER  ************************
+ ***************************************************/
+.pie-pagina{
+    align-self: flex-end;
+    background: $fondo-color-menu;
+    padding: 1.2rem;
+
+    .pie-pagina__informacion{
+        font-size: 1rem;
+        color: $letra-color-encabezados-1;
+        span{
+            font-weight: bold;
+        }
+    }
+
+    .pie-pagina__enlaces{
+        .enlace{
+            font-size: 1rem;
+            font-weight: bold;
+            margin:0rem 1rem;
+        }
+    }
+}
